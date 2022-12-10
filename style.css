@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+
+}
+
+/* navbarstyling */
+
+.nav {
+    width: 100%;
+    height: 60px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.nav .logo {
+    margin-left: 56px;
+}
+
+.nav .navbar {
+    display: flex;
+    margin: 2px 36px;
+}
+
+.nav .navbar li {
+    list-style: none;
+    padding: 12px;
+
+}
+
+.nav .logo a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav .navbar li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* background image  */
+
+.headerbg {
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    top: -15vh;
+    z-index: -1;
+}
+
+.headerimg {
+    width: 100%;
+    height: 100vh;
+    opacity: 0.5;
+
+}
+
+/*heder serach styling*/
+
+.heropage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+}
+
+.heropage .herozomato {
+    padding-top: 40px;
+    width: 400p;
+    height: 80px;
+}
+
+.heropage h3 {
+    padding-top: 30px;
+    font-size: 46px;
+    font-weight: lighter;
+    color: white;
+
+}
+
+
+.search {
+    width: 55vw;
+    height: 50px;
+    margin: 20px 0px;
+    border-radius: 10px;
+    padding: 2px 3px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 254, 254);
+}
+
+.search .searchplace {
+    margin: 10px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    padding-right: 9px;
+    border-right: 1px solid grey;
+}
+
+.search .searchplace p {
+    margin: 10px;
+
+}
+
+.search .searchbar {
+    margin: 2px;
+
+    display: flex;
+    align-items: center;
+}
+
+.search .searchbar input {
+    width: 37vw;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    padding: 15px;
+
+}
+
+
+/*---servbices section---*/
+
+.services-section {
+    width: 100%;
+
+}
+
+.services {
+    margin-top: 110px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.card {
+    width: 400px;
+    height: 300px;
+    margin: 10px 0px;
+    box-shadow: 4px 4px 5px #aaaaaa;
+    border-radius: 15px;
+}
+
+.card:hover {
+    transform: translateY(-6px) scale(1.005) translateZ(0);
+    cursor: pointer;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 10px;
+    font-size: 1.4rem;
+}
+
+.card p {
+    padding: 1px 10px;
+    font-size: 1.2rem;
+}
+
+/* collection section  */
+
+.collection-section {
+    width: 100%;
+
+}
+
+.collectionhead {
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+
+.collectionhead h2 {
+    font-size: 2rem;
+}
+
+.collectionhead p {
+    font-size: 1.4rem;
+}
+
+.collection {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardcollection1 {
+    width: 300px;
+    height: 350px;
+    margin: 15px 30px;
+    border-radius: 10px;
+    position: relative;
+    color: rgb(248, 246, 246);
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.445);
+}
+
+.cardcollection1 h3 {
+    padding: 10px 3px;
+    font-size: 1.4rem;
+}
+
+.cardcollection1 p {
+    padding: 3px 10px;
+    font-size: 1rem;
+}
+
+
+
+.cardcollection1 img {
+    width: 280px;
+    height: 350px;
+    opacity: 1;
+    z-index: -1;
+    position: absolute;
+    border-radius: 8px;
+
+}
+
+/*---localities---*/
+
+
+.localities-section {
+    width: 100%;
+
+}
+
+
+.localitieshead {
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+
+.localitieshead h2 {
+    font-size: 2rem;
+}
+
+
+.localities {
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.localitiescard {
+    align-items: center;
+    border: 2px solid rgba(59, 59, 59, 0.507);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.localitiescard:hover {
+    transform: translateY(-5px) scale(1) translateZ(0);
+    cursor: pointer;
+    box-shadow: 4px 4px 7px #aaaaaa;
+}
+
+
+/*----getapp-section-----*/
+
+.getapp-section {
+    width: 100%;
+    height: 70vh;
+    margin-top: 100px;
+    background-color: rgba(255, 0, 140, 0.075);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.getapp {
+    display: flex;
+
+}
+
+.getappimg {
+    width: 250px;
+    height: 290px;
+}
+
+
+
+.getappcontent h1 {
+    font-size: 3rem;
+}
+
+.getappcontent p {
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+
+.getappcontent .getappradio {
+    margin-top: 10px;
+    border: 0px;
+    width: 1.4rem;
+    height: 1.4em;
+}
+
+.getappcontent .radio {
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+
+.getappcontent .radio input {
+    width: 1.4rem;
+    height: 1.4em;
+}
+
+.form {
+    margin-top: 10px;
+}
+
+
+.form input {
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    outline: none;
+    padding: 7px 10px;
+}
+
+
+.form button {
+    margin-left: 10px;
+    background-color: rgb(241, 70, 142);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 11px 10px;
+}
+
+.appplay {
+    margin-top: 10px;
+}
+
+.appplay h2 {
+    font-weight: lighter;
+}
+
+.appplay img {
+    margin-top: 10px;
+    width: 150px;
+}
+
+/*----getapp-section-----*/
+
+.exploreoption-section {
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(98, 140, 146, 0.062);
+
+}
+
+.exploreoptionhead {
+    padding-top: 50px;
+    margin-left: 110px;
+}
+
+.exploreoptionhead h2 {
+    font-size: 1.9rem;
+}
+
+.exploreoptioncard {
+    font-size: 1.2rem;
+    width: 88%;
+    border: 2px solid rgba(87, 85, 85, 0.219);
+    border-radius: 5px;
+    margin: 20px 0px;
+    padding: 20px 20px;
+
+}
+
+.exploreoptioncard h3 {
+    font-weight: lighter;
+}
+
+/*---footer-section---*/
+
+.footer-section {
+    width: 100%;
+    height: 75vh;
+    background-color: rgba(10, 10, 10, 0.986);
+    color: white;
+
+}
+
+
+.footer-section .localitieshead {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-right: 50px;
+
+}
+
+
+.footer-section .localitieshead .country {
+    margin: 20px;
+}
+
+.footer-section .localitieshead img {
+    width: 150px;
+
+}
+
+.footerhead ul {
+    margin-top: 10px;
+
+}
+
+.footerhead ul li {
+    list-style: none;
+    line-height: 1.8rem;
+    cursor: pointer;
+
+}
+
+.footerhead {
+    padding-top: 40px;
+    margin-bottom: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footerappplay .applink {
+    width: 100px;
+}
